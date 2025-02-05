@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+        <meta charset="UTF-8">
+    <!-- See: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett">    <title>Contented 🕸 Documentation</title>
+
+    <meta name="description" content="A Do It Yourself Blog">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <link rel="canonical" href="https://robindotis.github.io//docs//">
+    <link rel="me" href="https://github.com/robindotis/">
+    <link rel="alternate" type="application/rss+xml" title="Contented 🕸 RSS" href="/feed/">
+    <link rel="alternate" href="/feed/index.xml" type="application/atom+xml" title="Contented 🕸">
+    <link rel="alternate" href="" type="application/json" title="Contented 🕸">
+    <link rel="icon" href="/assets/images/cw.jpg" type="image/jpeg" sizes="50x50">
+
+    <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+    
+            
+    <link rel="stylesheet" href="/assets/css/fonts.css" media="all">
+    <link rel="stylesheet" href="/assets/css/structure.css" media="all">
+    <link rel="stylesheet" href="/assets/css/style.css" media="all">
+    <link rel="stylesheet" href="/assets/css/default.css" media="all">
+    <script src="/assets/js/theme.js" defer></script>
+  </head>
+  <body>
+    <header class="masthead h-card">
+    <p class="skip-link"><a href="#skip-content-target">Skip to the content</a></p>
+        <div class="header-area">
+            <div class="header-title">
+            <hr class="nodisplay" aria-hidden="true">
+            <span class="sitetitle">
+                                <a href="/" class="u-url p-name">Contented 🕸</a>
+            </span>
+            <nav class="subtitle p-note" aria-label="Main">
+                <ul>
+
+                    <li>
+                    
+                                        <a href="/" class=" ">Home</a>
+                </li>
+                    <li>
+                    
+                                        <a href="/docs/" class="current ">Docs</a>
+                </li>
+                    </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <hr aria-hidden="true">
+    <main id="site-content"  class="tmpl-page">
+        <hr class="nodisplay" aria-hidden="true">
+        <div class="main-content">
+          <article class="custom-" id="skip-content-target">
+    <header>
+      <h1>Documentation</h1> 
+    </header>
+    <h2>About Contented🕸</h2>
+<p><em><strong>Contented</strong></em> 🕸 is a simple script creating a static website.</p>
+<p>Content is created in text files, processed by the script and published on the web. That's it.</p>
+<p>A new website can be online within a couple of minutes. No coding knowledge required.</p>
+<p>If this sounds interesting to you and you would like your own independent part of the web, keep reading. All in the spirit of the <a href="https://indieweb.org/">IndieWeb</a>.</p>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#adding-content">Adding content</a></li>
+<li><a href="#folder-structure">Folder structure</a></li>
+<li><a href="#menus">Menus</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#metadata">Metadata</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#references">References</a></li>
+</ol>
+<h2>Getting started</h2>
+<p>To get started with <em><strong>Contented</strong></em> 🕸, using these instructions, a <a href="https://github.com/">GitHub</a> account is needed.</p>
+<p>Everything is done in GitHub: writing content, generating the site and publishing the pages. No other tool is needed other than your browser.</p>
+<h3>GitHub account</h3>
+<p>If you don't already have one, you can sign up for a <a href="https://github.com/signup">GitHub account here</a>.</p>
+<p>When picking your username, be aware that unless you have your own domain name, your website will use the domain name: YOURUSERNAME.github.io.</p>
+<h3>Copy the script</h3>
+<p>Once your account is setup and you are logged in, you need to copy the script to your GitHub account. This is called forking a repository on GitHub. The steps below will create a repository with the script installed in it.</p>
+<ol>
+<li>Visit this page: <a href="https://github.com/robindotis/robindotis.github.io">https://github.com/robindotis/robindotis.github.io</a></li>
+<li>Click on the &quot;Fork&quot; button to the top right of the page.</li>
+<li>Name the repository &quot;YOURUSERNAME.github.io&quot; and untick &quot;Copy the main branch only&quot;.</li>
+<li>Click on &quot;Create Fork&quot;.</li>
+</ol>
+<h3>Build the site</h3>
+<p>Now that the repository is setup with the script, you need to build the site. This is done with <a href="https://github.com/features/actions">GitHub Actions</a>.</p>
+<ol>
+<li>Click on &quot;Actions&quot; in the horizontal menu.</li>
+<li>Accept the warning about workflows, by clicking on the green button.</li>
+<li>Click on &quot;Build site&quot; in the left hand menu.</li>
+<li>On the right hand side, click on the &quot;Run workflow&quot; dropdown, followed by the green &quot;Run workflow&quot; button.</li>
+<li>After a about a minute you should see a successful build, with a green tick next to the build name.</li>
+</ol>
+<p>Each time you make a change to your site you need to follow the above steps to rebuild the site.</p>
+<h3>Publish the site</h3>
+<p>Finally it's time to publish the site. For this we need to configuire <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+<ol>
+<li>Go to the GitHub Pages settings by clicking on &quot;Settings&quot; in the horizontal menu</li>
+<li>Then click on &quot;Pages&quot; in the left hand menu.</li>
+<li>Click on the &quot;None&quot; dropdown and choose &quot;gh-pages&quot;.</li>
+<li>Click on the &quot;Save&quot; button to the right &quot;None&quot; dropdown.</li>
+<li>Wait one minute, reload the page and follow the link towards the top of the page.</li>
+<li>Your site is live on YOURUSERNAME.github.io.</li>
+</ol>
+<p>This is a one off step. Once GitHub Pages is configured changes to the site will be automatically published once they are built.</p>
+<h3>Start Writing</h3>
+<p>Now explore GitHub a little. The <a href="https://docs.github.com/en/get-started">GitHub docs</a> are very comprehensive. Being comfortable writing content and editing configuration files will be helpful, but this can also be learned. The <a href="https://docs.github.com/en/get-started/writing-on-github">GitHub Writing guide</a> is maybe a good place to start for those new to GitHub.</p>
+<h3>Final note</h3>
+<p>To use this script to generate your site, it helps if you are willing to play around a bit and explore these tool. If this is you, <a href="/docs/adding-content/">keep going</a>, if not, these alternative independent online blogging services are highly recommended:</p>
+<ul>
+<li><a href="https://bearblog.dev/">Bear Blog</a></li>
+<li><a href="https://pika.page/">PIKA</a></li>
+<li><a href="https://micro.blog/">micro.blog</a></li>
+</ul>
+<h2>Adding content</h2>
+<p>Files on GitHub can be browsed just like on your desktop. Click on &quot;Code&quot; in top right and you will see a list of all the files.</p>
+<p>Content is added into Markdown files, with the extension &quot;.md&quot;. Markdown is a very simple language for writing content that will be converted to HTML when the page is published. For more details on Markdown, please see <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">GitHub's Markdown guide</a>.</p>
+<p>Markdown can also contain HTML, so you can markup your content in plain HTML if you prefer. Mozilla provide a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">very good HTML reference</a>, if you are new to HTML.</p>
+<p>Only files with the extension .md are processed and converted to HTML files. By default, all other file types are ignored unless they are files in the assets folder, which are simply copied to the live site.</p>
+<h3>Front Matter</h3>
+<p>Each Markdown file can also contain settings specific to that page. This is called Front Matter and is always placed at the start of the file.</p>
+<p>The Front Matter section of the file has a specific structure which <strong>must</strong> be followed.</p>
+<p>Firstly it always starts and ends with the line: <code>---</code>.</p>
+<p>Secondly it contains attribute / value pairs, one per line, eg: <code>title: Welcome to my blog</code>. The order of the attributes within the Front Matter is not important.</p>
+<p>Front Matter is written in YAML, which is also used for the site configuration (see later). Here is a good <a href="https://www.yaml.info/learn/index.html">guide to YAML</a>, although it might be a little technical for some.</p>
+<p>If the attribute contains a list of values, it would be spread over multiple lines, eg:</p>
+<pre><code>tags:
+- post
+- travel
+- photo 
+</code></pre>
+<p>The Front Matter of a typical post might therefore look something like this:</p>
+<pre><code>---
+title: Happy New Year
+date: 2025-01-01 08:00:00
+tags:
+- celebration
+- new year
+- photo
+---
+</code></pre>
+<p><em><strong>Contented</strong></em> 🕸 understands the following Front Matter attributes. Any other attributes will be ignored.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>Free text.</td>
+</tr>
+<tr>
+<td>date</td>
+<td>ISO format YYYY-MM-DD hh:mm:ss eg &quot;2025-01-01 08:00:00&quot;. Used for sorting posts.</td>
+</tr>
+<tr>
+<td>permalink</td>
+<td>Any valid URL path, eg &quot;/about/&quot;. If not specified the link for the file will be the title.</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>Free text list of tags, one per line.</td>
+</tr>
+<tr>
+<td>prefix</td>
+<td>Free text to add before the page name in the title bar.</td>
+</tr>
+<tr>
+<td>navigation</td>
+<td>For defining in which menu this page should appear.</td>
+</tr>
+<tr>
+<td>- menu</td>
+<td>Which menu the page appears in. Default templates support &quot;header&quot; and &quot;footer&quot;.</td>
+</tr>
+<tr>
+<td>- title</td>
+<td>The text for the menu item.</td>
+</tr>
+<tr>
+<td>- position</td>
+<td>The position of the menu item within the menu. Should be a number.</td>
+</tr>
+<tr>
+<td>- pre</td>
+<td>Text to add before the link for the menu item.</td>
+</tr>
+<tr>
+<td>- post</td>
+<td>Text to add after the link for the menu item.</td>
+</tr>
+<tr>
+<td>- class</td>
+<td>CSS class to add to the menu item, for custom styling.</td>
+</tr>
+</tbody>
+</table>
+<p>Note: you do not need to enclose the value in quotes in the Front Matter section.</p>
+<p>A page to be placed in the header menu would look like this:</p>
+<pre><code>---
+title: About
+date: 2025-02-01 08:00:00
+navigation:
+- menu: header
+- title: About me
+- position: 3
+---
+</code></pre>
+<h3>Example markdown file</h3>
+<p>A typical complete Markdown file might therefore look something like this:</p>
+<pre><code>---
+title: Happy New Year
+date: 2025-01-01 08:00:00
+tags:
+- celebration
+- new year
+- photo
+---
+
+## Welcome
+
+This is first blog post, I hope you enjoy this site.
+
+&lt;blockquote&gt;Doing It Yourself Rocks!&lt;/blockquote&gt;
+
+</code></pre>
+<h2>Folder structure</h2>
+<h3>Folders</h3>
+<p>These are the default folders. They should not be removed or renamed. More folders can be added without affecting the site.</p>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>assets</td>
+<td>Contains static files, such as images, styling (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>) and scripting (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>). Folder will be copied as is to your website.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Contains configuration files, in <a href="https://en.wikipedia.org/wiki/JSON">YAML</a> format.</td>
+</tr>
+<tr>
+<td>feed</td>
+<td>Contains code to generate the <a href="https://en.wikipedia.org/wiki/RSS">RSS feed</a>.</td>
+</tr>
+<tr>
+<td>pages</td>
+<td>Contains the site pages written in Markdown. These are standalone pages that will not be processed as posts and therefore won't appear in your feed.</td>
+</tr>
+<tr>
+<td>posts</td>
+<td>Contains the blog posts written in Markdown. Subfolders are allowed to help organise the posts (eg by year), but it won't affect how the posts are processed.</td>
+</tr>
+<tr>
+<td>themes</td>
+<td>Contains template for the site design, using the <a href="https://docs.github.com/en/get-started/writing-on-github">Twig</a> templating system.</td>
+</tr>
+<tr>
+<td>uploads</td>
+<td>Folder into which to upload images to process them into the <a href="https://en.wikipedia.org/wiki/WebP">WEBP</a> image format.</td>
+</tr>
+</tbody>
+</table>
+<p>Only touch the <strong>.github</strong> folder if you know what you are doing. This contains the code that generates and publishes the website.</p>
+<h3>Files</h3>
+<p>This is a list of specific files. You can edit them, but be sure you understand what you are doing.</p>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>robots.txt</td>
+<td>Defines how search engines index the site. See <a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro">Google for further information on robots.txt</a>. Modify only if needed.</td>
+</tr>
+<tr>
+<td>_CNAME</td>
+<td>Contains the custom domain if there is one. Rename it to &quot;CNAME&quot; if using a custom domain name with GitHub Pages. Otherwise ignore.</td>
+</tr>
+<tr>
+<td>pages/home.md</td>
+<td>Content for the homepage. The homepage markdown file should have the permalink front matter attribute defined as: <code>permalink: /</code>. One page, and only one page, should have this set otherwise the site will not have a homepage and visiting the base URL will return a page not found.</td>
+</tr>
+<tr>
+<td>pages/404.md</td>
+<td>Content to display when a page is not found. The page not found markdown file should have the permalink front matter attribute defined as: <code>permalink: /404.html</code>.</td>
+</tr>
+<tr>
+<td>feed/index.md</td>
+<td>Generates the RSS feed in Atom format.</td>
+</tr>
+<tr>
+<td>pages/sitemap.md</td>
+<td>Generate a <a href="https://www.sitemaps.org/protocol.html">sitemap.xml file</a> used by <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">search engines to index the site</a>. Remove if a sitemap is not needed (not recommended).</td>
+</tr>
+</tbody>
+</table>
+<p>Only touch the <strong>index.php</strong> file if you know what you are doing. This contains the code that processes the markdown files to generate the static HTML files.</p>
+<h2>Menus</h2>
+<p>Menus can be defined for the header and footer. This is done in the file &quot;/data/menus.yaml&quot;. The syntax of this file is a little more complicated as it is written in YAML.</p>
+<p><a href="https://www.yaml.info/learn/index.html">Learn more about the YAML syntax here</a>.</p>
+<p>As an example this file menus.yaml file for a site with two menus, a header and a footer menu. You can add as many menus as you wish, but the default template only knows the header and footer menus.</p>
+<pre><code>header:
+    - title: Home
+      link: /home/
+    - title: About
+      link: /about/
+    - title: Blog
+      link: /blog/
+    - title: /walking
+      link: /walking/
+      pre: 'and '
+    - title: dog 🐕‍🦺
+      link: /tagging/dog/
+      pre: 'the '
+      post: '. '
+- footer:
+    - title: RSS
+      link: /feed/
+      class: ally-statement
+    - title: Accessibility
+      link: /accessibility/
+    - title: Site info
+      link: /my-site/
+</code></pre>
+<p>If menu items are defined in the menus.yaml file as well as in the Front Matter of specific pages, they are merged based on the position of the items. It is better to not define menu items in both the menus.yaml file and the page Front Matter as the results can be unexpected.</p>
+<h2>Themes</h2>
+<p>Themes can be set in the settings.yaml file.</p>
+<p>Themes are created in the <code>/templates/</code> folder. They are build using the <a href="https://twig.symfony.com/">Twig template language</a>.</p>
+<p>If not set it will take the default templates from the folder: <code>/templates/default/</code>. If that folder does not exist, the site cannot be built.</p>
+<p>A theme can extend another theme, as defined by the <code>themeExtends</code> setting.</p>
+<h2>Metadata</h2>
+<p>Metadata is information about the site. It is stored in YAML format in the file <code>/data/metadata.yaml</code>. This metadata can be accessed from the site's template, for example to display the title of the site.</p>
+<p>This is an example the metadata.yaml file for a basic site:</p>
+<pre><code>title: Robin's
+url: https://www.robin.is/
+urlShort: robin.is
+language: en
+description: Setup and host your own independent blog
+startYear: 2025
+relMe: https://github.com/robindotis/
+gitHubRepo: https://github.com/robindotis/robin.is/
+theme: sky
+feed:
+  subtitle: Setup and host your own independent blog
+  filename: index.xml
+  path: /feed/index.xml
+  id: https://www.robin.is/
+author:
+  name: robindotis
+  email: admin@robin.is
+  url: https://www.robin.is/about/
+  webmention: https://github.com/robindotis/
+</code></pre>
+<h2>Settings</h2>
+<p>Settings are set in the file: <code>/data/setting.yaml</code>. These settings define how the content should be processed. Do not touch unless you are sure you know what you are doing.</p>
+<p>Allowed settings are:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>staticDirs</td>
+<td>[assets]</td>
+<td>List of folders containing static files to be copied as is to the output directory.</td>
+</tr>
+<tr>
+<td>staticFiles</td>
+<td>[robots.txt,feed/pretty-feed-v3.xsl]</td>
+<td>List of static files to be copied as is to the output directory.</td>
+</tr>
+<tr>
+<td>sourceDirs</td>
+<td>[posts, pages, feed]</td>
+<td>List of folders to be processed. Only Markdown files will be processed.</td>
+</tr>
+<tr>
+<td>outputDir</td>
+<td>/_site/</td>
+<td>The folder in to which the files for the static site will be placed.</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>matrix</td>
+<td>The name of the folder containing the templates for the site.</td>
+</tr>
+<tr>
+<td>themeExtends</td>
+<td>default</td>
+<td>The name of the folder containing the theme that <code>theme</code> builds up on, if any.</td>
+</tr>
+</tbody>
+</table>
+<p>All settings are optional. If they are not provided, defaults will be used.</p>
+<p>The default settings.yaml file looks like this:</p>
+<pre><code>staticDirs: [assets]
+staticFiles: [robots.txt,feed/pretty-feed-v3.xsl]
+sourceDirs: [posts, pages, feed]
+outputDir: /_site/
+</code></pre>
+<h2>References</h2>
+<p>Below are some excellent links to further technical information and documentation on the technologies used for this site generator.</p>
+<ul>
+<li>Writing the content with <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Markdown</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>.</li>
+<li>Styling the site with (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>).</li>
+<li>Scripting functionality with (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>).</li>
+<li>Modifying the sites structure using the <a href="https://twig.symfony.com/">Twig template language</a>.</li>
+<li>For the really adventurous: adapting the site generation engine using <a href="https://www.w3schools.com/php/">PHP</a>.</li>
+<li><a href="https://docs.github.com/en/actions">GitHub Actions</a></li>
+<li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">GitHub Pages</a></li>
+<li><a href="https://docs.github.com/en/webhooks">Webhooks</a></li>
+<li><a href="https://www.rssboard.org/rss-specification">RSS</a> and <a href="https://en.wikipedia.org/wiki/Atom_(web_standard)">Atom</a></li>
+<li><a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview">Sitemap.xml</a></li>
+</ul>
+
+    <footer>
+            Created on:           <time datetime="January 25, 2025 12:00" class="dt-published">
+            <span class="date-day">25</span> 
+            <span class="date-month">January</span>, 
+            <span class="date-year">2025</span>
+          </time>
+ 
+          </footer>
+  </article>
+        </div> 
+    </main>
+    <hr aria-hidden="true">
+        <footer>
+        <div class="footer-area">
+            <div class="rss">
+                <p>
+                                                            <a href="/feed/" class="  ally-statement ">RSS</a> 
+                                            <a href="/accessible/" class=" ">Accessibility</a> 
+                                                    </p>
+            </div>
+            <div>
+                <p>
+                robindotis.github.io is a <em><strong>contented</strong></em> 🕸 blog. 
+                <span class="emojis"><a href="https://github.com/robindotis/robin.is/blob/master/docs/docs.md" title="Edit on GitHub"><img id="gh-icon" src="/assets/images/github-mark-small.png" alt="Edit on GitHub"/></a></span>                </p>
+            </div>
+            <div class="lastrun">
+                <p>
+                Last updated on 05/02/2025 at 19:02:20.
+                </p>
+            </div>
+            <div class="copyright">
+                <p>
+                2025 robindotis
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Current page: /docs// -->
+  </body>
+</html>
