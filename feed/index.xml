@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/feed/pretty-feed-v3.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Documentation</title>
+	<title>Robin&#039;s Documentation</title>
 	<subtitle>Documentation news</subtitle>
 		<link href="https://docs.robin.is/feed/index.xml" rel="self"/>
 	<link href="https://docs.robin.is/" rel="alternate" type="text/html"/>
