@@ -260,8 +260,8 @@ Array
 <p>Let a hundred blogging tools bloom; let a hundred schools of thought blog.</p>
 <p>-- With apologies to <cite><a href="https://en.wikipedia.org/wiki/Hundred_Flowers_Campaign">Mao Zedong</a></cite></p>
 </blockquote>
-<p>I've documented this script to encourage building, hosting and managing independent blogs over the use of common blogging services.</p>
-<p>Why yet another blogging tool? The more independent tools there are, the more means of expression we have and the more ways of thinking are encouraged.</p>
+<p>I've documented my home brew php site generation script to encourage building, hosting and managing independent blogs over the use of common blogging services.</p>
+<p>Why yet another script? The more independent tools there are for creating websites, the more means of expression we have and the more ways of thinking are encouraged.</p>
 <p><a href="/docs/">Get started here</a>.</p>
 <p>Or view the <a href="https://github.com/robindotis/docs.robin.is/blob/main/index.php">script on GitHub</a>.</p>
 
@@ -1211,7 +1211,7 @@ Array
     [description] => Documentation for robin.is
     [startYear] => 1998
     [relMe] => https://github.com/robindotis/
-    [gitHubRepo] => https://github.com/robindotis/docs.robin.is.live/
+    [gitHubRepo] => https://github.com/robindotis/docs.robin.is/
     [theme] => sky
     [clacksOverhead] => GNU Terry Pratchett
     [feed] => Array
