@@ -352,10 +352,10 @@ This is first blog post, I hope you enjoy this site.
 <p>The <code>pages.json</code> file looks like this:</p>
 <pre><code>{
   &quot;template&quot;: &quot;page&quot;,
-  &quot;permalink&quot;: &quot;/docs/&quot;
+  &quot;permalink&quot;: &quot;/{ { filename }}/&quot;
 }
 </code></pre>
-<p><code>docs</code> will be processed by Twig and replaced with the value of &quot;filename&quot; before the page is handled during the site generation.</p>
+<p><code>{ { filename }}</code> will be processed by Twig and replaced with the value of &quot;filename&quot; before the page is handled during the site generation.</p>
 <p>If the Twig statement includes a double quote: &quot; then it needs to be hidden from the Markdown converter, else it will be converted to an HTML entity: &amp;quot;.</p>
 <p>The best approach is to use single quotes: ' . eg:</p>
 <pre><code>{ { include('./templates/default/includes/postslist-fixed.html.twig') } }
@@ -481,7 +481,7 @@ outputDir: /_site/
             </div>
             <div class="lastrun">
                 <p>
-                Last updated on 07/02/2025 at 15:02:15.
+                Last updated on 07/02/2025 at 15:02:08.
                 </p>
             </div>
             <div class="copyright">
