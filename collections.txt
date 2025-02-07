@@ -695,10 +695,10 @@ This is first blog post, I hope you enjoy this site.
 <pre><code>{ { include('./templates/default/includes/postslist-fixed.html.twig') } }
 </code></pre>
 <p>If this is not possible then the statement needs to be inside an HTML comment:</p>
-<pre><code>&lt;!--{ { include(''./templates/default/includes/postslist-fixed.html.twig'') } }--&gt;
+<pre><code>&lt;!--{ { include(&quot;./templates/default/includes/postslist-fixed.html.twig&quot;) }}--&gt;
 </code></pre>
-<p>(Note that for the example above, two single quotes are used, otherwise the script breaks due to Markdown escaping text inside the code block.</p>
-<p>The Markdown converter will not convert the content of the HTML commment. Later on the script changes &lt;!--{ { } }--&gt; back to { { } }. Note there is no space between the -- and { {, or between the curly brackets.</p>
+<p>(Note that for the examples above a space has been added between the opening curly brackets).</p>
+<p>The Markdown converter will not convert the content of the HTML commment. Later on the script changes &lt;!--{ { }}--&gt; back to { { }}.</p>
 <p>Likewise if there are any other characters in the Twig statement that Markdown will  convert, the statement needs to be wrapped in HTML comments. Some example characters include &lt;, &gt; and &amp;.</p>
 <h2 id="metadata">Metadata</h2>
 <p>Metadata is information about the site. It is stored in YAML format in the file <code>/data/metadata.yaml</code>. This metadata can be accessed from the site's template, for example to display the title of the site.</p>
