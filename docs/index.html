@@ -70,6 +70,7 @@
 <li><a href="#folder-structure">Folder structure</a></li>
 <li><a href="#menus">Menus</a></li>
 <li><a href="#themes">Themes</a></li>
+<li><a href="#shortcodes">Shortcodes</a></li>
 <li><a href="#metadata">Metadata</a></li>
 <li><a href="#settings">Settings</a></li>
 <li><a href="#references">References</a></li>
@@ -345,6 +346,26 @@ This is first blog post, I hope you enjoy this site.
 <p>Themes are created in the <code>/templates/</code> folder. They are build using the <a href="https://twig.symfony.com/">Twig template language</a>.</p>
 <p>If not set it will take the default templates from the folder: <code>/templates/default/</code>. If that folder does not exist, the site cannot be built.</p>
 <p>A theme can extend another theme, as defined by the <code>themeExtends</code> setting.</p>
+<h2 id="shortcodes">Shortcodes</h2>
+<p>Markdown files are sent through thr Twig processor before they themselves rendered to HTML. Any Twig statements in the Markdown file will therefore be processed, including any such statements in the Front Matter.</p>
+<h3 id="examples">Examples</h3>
+<p>The <code>pages.json</code> file looks like this:</p>
+<pre><code>{
+  &quot;template&quot;: &quot;page&quot;,
+  &quot;permalink&quot;: &quot;/docs/&quot;
+}
+</code></pre>
+<p><code>docs</code> will be processed by Twig and replaced with the value of &quot;filename&quot; before the page is handled during the site generation.</p>
+<p>If the Twig statement includes a double quote: &quot; then it needs to be hidden from the Markdown converter, else it will be converted to an HTML entity: &amp;quot;.</p>
+<p>The best approach is to use single quotes: ' . eg:</p>
+<pre><code>{ { include('./templates/default/includes/postslist-fixed.html.twig') } }
+</code></pre>
+<p>If this is not possible then the statement needs to be inside an HTML comment:</p>
+<pre><code>&lt;!--{ { include(''./templates/default/includes/postslist-fixed.html.twig'') } }--&gt;
+</code></pre>
+<p>(Note that for the example above, two single quotes are used, otherwise the script breaks due to Markdown escaping text inside the code block.</p>
+<p>The Markdown converter will not convert the content of the HTML commment. Later on the script changes &lt;!--{ { } }--&gt; back to { { } }. Note there is no space between the -- and { {, or between the curly brackets.</p>
+<p>Likewise if there are any other characters in the Twig statement that Markdown will  convert, the statement needs to be wrapped in HTML comments. Some example characters include &lt;, &gt; and &amp;.</p>
 <h2 id="metadata">Metadata</h2>
 <p>Metadata is information about the site. It is stored in YAML format in the file <code>/data/metadata.yaml</code>. This metadata can be accessed from the site's template, for example to display the title of the site.</p>
 <p>This is an example the metadata.yaml file for a basic site:</p>
@@ -460,7 +481,7 @@ outputDir: /_site/
             </div>
             <div class="lastrun">
                 <p>
-                Last updated on 06/02/2025 at 08:02:39.
+                Last updated on 07/02/2025 at 15:02:30.
                 </p>
             </div>
             <div class="copyright">
