@@ -756,6 +756,11 @@ author:
 <td>The folder in to which the files for the static site will be placed.</td>
 </tr>
 <tr>
+<td>showSpeed</td>
+<td>false</td>
+<td>A gimmick to output the site generation speed to the home page (the root index.html file). Will replace the token CW_SPEED with the time in seconds and remove any HTML comments surrounding it. HTML comments can therefore be used to hide the token from other pages</td>
+</tr>
+<tr>
 <td>theme</td>
 <td>matrix</td>
 <td>The name of the folder containing the templates for the site.</td>
