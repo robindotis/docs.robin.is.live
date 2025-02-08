@@ -393,7 +393,7 @@ Array
                     [date] => 2025-02-06 12:00:00
                     [permalink] => /docs//
                     [inputPath] => docs/docs.md
-                    [content] => <p>This is a simple script for creating a static website.</p>
+                    [content] => <p>This is a simple script for creating a static website. Currently less than 500 lines of code.</p>
 <p>Content is created in text files, processed by the script and published on the web. That's it.</p>
 <p>A new website can be online within a couple of minutes. No coding knowledge required.</p>
 <p>If this sounds interesting to you and you would like your own independent part of the web, keep reading. All in the spirit of the <a href="https://indieweb.org/">IndieWeb</a>.</p>
