@@ -404,7 +404,7 @@ Array
 <li><a href="#folder-structure">Folder structure</a></li>
 <li><a href="#menus">Menus</a></li>
 <li><a href="#themes">Themes</a></li>
-<li><a href="#paging">Paging</a></li>
+<li><a href="#posts-lists">Posts lists</a></li>
 <li><a href="#shortcodes">Shortcodes</a></li>
 <li><a href="#metadata">Metadata</a></li>
 <li><a href="#settings">Settings</a></li>
@@ -688,7 +688,7 @@ This is first blog post, I hope you enjoy this site.
       link: /my-site/
 </code></pre>
 <p>If menu items are defined in the menus.yaml file as well as in the Front Matter of specific pages, they are merged based on the position of the items. It is better to not define menu items in both the menus.yaml file and the page Front Matter as the results can be unexpected.</p>
-<h2 id="post-lists">Post Lists</h2>
+<h2 id="posts-lists">Posts Lists</h2>
 <p>Lists of posts can be defined using the pagination Front Matter attribute. If your page has this attribute set, the page will display a list of relevant posts. Note though that you need to ensure the page uses a template designed to show posts. By default the template &quot;archive.hmtl.twig&quot; can be used.`</p>
 <h2 id="themes">Themes</h2>
 <p>Themes can be set in the settings.yaml file.</p>
