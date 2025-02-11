@@ -325,12 +325,12 @@ Array
             [pages/tagged.md] => Array
                 (
                     [template] => page.html.twig
-                    [permalink] => /tagging/{{ tag | slug }}/
-                    [title] => Posts tagged “{{ tag }}”
+                    [permalink] => /tagging/{{ alias | slug }}/
+                    [title] => Posts tagged “{{ alias }}”
                     [pagination] => Array
                         (
                             [data] => tag
-                            [size] => 1
+                            [size] => 0
                             [filter] => Array
                                 (
                                     [0] => all
@@ -345,7 +345,7 @@ Array
 
                     [inputPath] => pages/tagged.md
                     [date] => 253402300799
-                    [content] => <p>Posts for tag...</p>
+                    [content] => <p>Posts for tag: {{ alias }}</p>
 
                     [filename] => tagged
                 )

@@ -37,7 +37,7 @@
         <lastmod>9999-12-31</lastmod>
       </url>
           <url>
-        <loc>https://docs.robin.is/tagging/{{ tag | slug }}/</loc>
+        <loc>https://docs.robin.is/tagging/{{ alias | slug }}/</loc>
         <lastmod>9999-12-31</lastmod>
       </url>
           <url>
