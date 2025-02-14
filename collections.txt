@@ -188,16 +188,16 @@ Array
 
                 )
 
-            [four] => Array
+            [one] => Array
                 (
-                    [posts/drafts/post-four.md] => Array
+                    [posts/post-one.md] => Array
                         (
                             [template] => post.html.twig
-                            [title] => Post Four
-                            [date] => 2025-02-01 12:00:00
-                            [permalink] => /posts/drafts/post-four/
-                            [inputPath] => posts/drafts/post-four.md
-                            [filename] => post-four
+                            [title] => Post One
+                            [date] => 2025-01-28 12:00:00
+                            [permalink] => /posts/post-one/
+                            [inputPath] => posts/post-one.md
+                            [filename] => post-one
                         )
 
                 )
@@ -216,20 +216,6 @@ Array
 
                 )
 
-            [one] => Array
-                (
-                    [posts/post-one.md] => Array
-                        (
-                            [template] => post.html.twig
-                            [title] => Post One
-                            [date] => 2025-01-28 12:00:00
-                            [permalink] => /posts/post-one/
-                            [inputPath] => posts/post-one.md
-                            [filename] => post-one
-                        )
-
-                )
-
             [three] => Array
                 (
                     [posts/post-three.md] => Array
@@ -240,6 +226,20 @@ Array
                             [permalink] => /posts/post-three/
                             [inputPath] => posts/post-three.md
                             [filename] => post-three
+                        )
+
+                )
+
+            [four] => Array
+                (
+                    [posts/drafts/post-four.md] => Array
+                        (
+                            [template] => post.html.twig
+                            [title] => Post Four
+                            [date] => 2025-02-01 12:00:00
+                            [permalink] => /posts/drafts/post-four/
+                            [inputPath] => posts/drafts/post-four.md
+                            [filename] => post-four
                         )
 
                 )
@@ -507,8 +507,8 @@ tags:
 <td>Free text list of tags, one per line.</td>
 </tr>
 <tr>
-<td>prefix</td>
-<td>Free text to add before the page name in the title bar.</td>
+<td>titleprefix</td>
+<td>Free text to add before the page name in the page title.</td>
 </tr>
 <tr>
 <td>navigation</td>
